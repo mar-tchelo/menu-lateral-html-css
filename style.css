@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    background: url(https://images3.alphacoders.com/853/thumb-1920-85305.jpg);
+    background-size: 100%;
+
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.fa-bars{
+    font-size: 35px;
+    color: #9d9e41;
+}
+
+nav{
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 100vh;
+    left: -350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform:translateX(350px);
+}
+
+ul{
+    list-style-type: none;
+    
+    top: 55px;
+    position: absolute;
+    width: 100%;
+}
+
+a{
+    
+    display: block;
+    padding: 20px 10px;
+    color: white;
+}
+
+a:hover{
+    background-color:rgb(176,224,230);
+    color: black;
+}
+
+label{
+    z-index: 1;
+    padding: 10px;
+    position: absolute;
+}
